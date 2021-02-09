@@ -1,7 +1,4 @@
 library carregar_empresa_package;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/presenter/carregar_empresa_presenter.dart';
+export 'src/usecases/entities/resultado_empresa.dart';
