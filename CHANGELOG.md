@@ -1,3 +1,7 @@
+## 1.0.1
+
+* TODO: Correção do tempo de execução no presenter
+
 ## 1.0.0
 
 * TODO: Versão estável com usecase, repositorio e presenter ok
