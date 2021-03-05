@@ -1,3 +1,7 @@
+## 1.1.0
+
+* TODO: Ajustes para flutter 2.0.0.
+
 ## 1.0.1
 
 * TODO: Correção do tempo de execução no presenter
