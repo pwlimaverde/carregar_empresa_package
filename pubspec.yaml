@@ -1,6 +1,6 @@
 name: carregar_empresa_package
 description: Package de carregamento dos dados da empresa à partir do banco de dados.
-version: 1.1.0
+version: 1.1.1
 homepage: https://github.com/pwlimaverde/carregar_empresa_package.git
 
 environment:
