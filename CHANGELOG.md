@@ -1,3 +1,8 @@
+## 1.1.1
+
+* TODO: Atualização para retorno_sucesso_ou_erro_package 2.0.2.
+* TODO: Usecase e repositorio substituidos por RetornoResultadoPresenter.
+
 ## 1.1.0
 
 * TODO: Ajustes para flutter 2.0.0.
