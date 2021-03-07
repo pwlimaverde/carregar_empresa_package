@@ -1,5 +1,5 @@
 import 'package:carregar_empresa_package/src/presenter/carregar_empresa_presenter.dart';
-import 'package:carregar_empresa_package/src/usecases/entities/resultado_empresa.dart';
+import 'package:carregar_empresa_package/src/entities/resultado_empresa.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:retorno_sucesso_ou_erro_package/retorno_sucesso_ou_erro_package.dart';
