@@ -88,15 +88,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  retorno_sucesso_ou_erro_package:
+  return_success_or_error:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "7987bd3e1e17c21e574a61cc0528023a99ede4ce"
-      url: "https://github.com/pwlimaverde/retorno_sucesso_ou_erro_package.git"
-    source: git
-    version: "2.0.2"
+      name: return_success_or_error
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.7"
   rxdart:
     dependency: "direct dev"
     description:
