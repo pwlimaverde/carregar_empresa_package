@@ -1,3 +1,7 @@
+## 1.1.2
+
+* TODO: Refatoração para return_success_or_error 0.1.7.
+
 ## 1.1.1
 
 * TODO: Atualização para retorno_sucesso_ou_erro_package 2.0.2.

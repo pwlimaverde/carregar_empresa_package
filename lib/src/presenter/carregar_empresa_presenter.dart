@@ -1,10 +1,10 @@
-import 'package:retorno_sucesso_ou_erro_package/retorno_sucesso_ou_erro_package.dart';
+import 'package:carregar_empresa_package/src/utilitarios/erros_carregar_temas.dart';
+import 'package:return_success_or_error/return_success_or_error.dart';
 
 import '../entities/resultado_empresa.dart';
 
 class CarregarEmpresaPresenter {
-  final Datasource<Stream<ResultadoEmpresa>, ParametrosRetornoResultado>
-      datasource;
+  final Datasource<Stream<ResultadoEmpresa>> datasource;
   final bool mostrarTempoExecucao;
 
   CarregarEmpresaPresenter({
@@ -12,15 +12,18 @@ class CarregarEmpresaPresenter {
     required this.mostrarTempoExecucao,
   });
 
-  Future<RetornoSucessoOuErro<Stream<ResultadoEmpresa>>>
+  Future<ReturnSuccessOrError<Stream<ResultadoEmpresa>>>
       carregarEmpresa() async {
-    final resultado = await RetornoResultadoPresenter<Stream<ResultadoEmpresa>>(
-      mostrarTempoExecucao: mostrarTempoExecucao,
-      nomeFeature: "Carregar Empresa",
+    final resultado = await ReturnResultPresenter<Stream<ResultadoEmpresa>>(
+      showRuntimeMilliseconds: mostrarTempoExecucao,
+      nameFeature: "Carregar Empresa",
       datasource: datasource,
-    ).retornoResultado(
-        parametros:
-            NoParams(mensagemErro: "Erro ao carregar os dados da Empresa"));
+    )(
+      parameters: NoParams(
+        error: ErrorCarregarEmpresa(
+            message: "Erro ao carregar os dados da Empresa"),
+      ),
+    );
     return resultado;
   }
 }
